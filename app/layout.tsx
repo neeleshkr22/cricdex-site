@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Cricdex - Your Ultimate Cricket Companion',
-  description: 'CricDex is your ultimate cricket companion, providing real-time scores, detailed statistics, and in-depth analysis of cricket matches worldwide. Stay updated with live scores, player stats, and match insights all in one place.',
+  description: 'CricDex is your ultimate cricket companion, collect cards, flex, win',
   generator: 'Neelesh',
 }
 
