@@ -15,7 +15,7 @@ const orbitron = Orbitron({
 })
 
 export const metadata: Metadata = {
-  title: 'CricDex - Collect, Trade & Battle Cricket Legends',
+  title: 'CricDex - Collect, Trade & Battle Cricket players on Discord',
   description: 'The ultimate cricket collecting & battling Discord bot. Build your dream team, stake players in epic battles, and dominate the leaderboards!',
   generator: 'CricDex',
   icons: {
