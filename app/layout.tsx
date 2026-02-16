@@ -1,12 +1,27 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+import { Rajdhani, Orbitron } from 'next/font/google'
 import './globals.css'
 
+const rajdhani = Rajdhani({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-rajdhani',
+})
+
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-orbitron',
+})
+
 export const metadata: Metadata = {
-  title: 'Cricdex - Your Ultimate Cricket Companion',
-  description: 'CricDex is your ultimate cricket companion, providing real-time scores, detailed statistics, and in-depth analysis of cricket matches worldwide. Stay updated with live scores, player stats, and match insights all in one place.',
-  generator: 'Neelesh',
+  title: 'CricDex - Collect, Trade & Battle Cricket Legends',
+  description: 'The ultimate cricket collecting & battling Discord bot. Build your dream team, stake players in epic battles, and dominate the leaderboards!',
+  generator: 'CricDex',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({
@@ -15,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+    <html lang="en" className="dark">
+      <body className={`${rajdhani.variable} ${orbitron.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
