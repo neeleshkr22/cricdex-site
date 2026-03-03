@@ -33,45 +33,47 @@ export const pricingPlans = {
     buttonText: "Get Started",
     highlighted: false,
   },
-  pro: {
-    name: "Pro",
-    price: "$2.99",
-    period: "/ month",
-    description: "Best value for collectors",
+  legacy: {
+    name: "Legacy Badge",
+    price: "$6",
+    period: "then $5/mo",
+    description: "For true competitors who want power + rarity",
     features: [
-      "Everything in Basic",
-      "2x daily rewards",
-      "Exclusive legendary drops",
-      "Faster spawn notifications",
-      "Custom profile themes",
-      "Priority support",
+      "1.0 Rated Custom Card (Spawnable)",
+      "Monthly Rarity Boost per renewal",
+      "Access to Pre-Launched Cards",
+      "Premium Giveaways",
+      "Legacy Role & Premium Chat",
+      "Early Access to Upcoming Features",
+      "Rare Spawns",
     ],
-    buttonText: "Upgrade to Pro",
+    buttonText: "Get Legacy",
     highlighted: true,
-    highlightedFeature: "2x daily rewards",
+    highlightedFeature: "Spawnable Custom Card",
   },
-  lifetime: {
-    name: "Lifetime",
-    price: "$40",
-    period: "one-time",
-    description: "Pay once, play forever",
+  dynasty: {
+    name: "Dynasty Badge",
+    price: "$5",
+    period: "then $4/mo",
+    description: "For supporters who want identity & exclusivity",
     features: [
-      "Everything in Pro",
-      "Lifetime access",
-      "Exclusive lifetime badge",
-      "Early feature access",
-      "VIP Discord role",
+      "1.0 Rated Custom Card (Non-Spawnable)",
+      "Monthly Rarity Boost per renewal",
+      "Dynasty Role",
+      "Access to Private Chat",
+      "Premium Giveaways",
+      "Unique Identity in the Community",
     ],
-    buttonText: "Get Lifetime",
+    buttonText: "Get Dynasty",
     highlighted: false,
-    highlightedFeature: "Lifetime access",
+    highlightedFeature: "Exclusive Custom Card",
   },
 }
 
 export const stats = [
   { label: "Crics to Collect", value: 500, suffix: "+", counterClass: "counter-crics" },
-  { label: "Active Players", value: 128, suffix: "", counterClass: "counter-players" },
-  { label: "Crics Caught", value: 2675, suffix: "", counterClass: "counter-caught" },
+  { label: "Active Players", value: 200, suffix: "+", counterClass: "counter-players" },
+  { label: "Crics Caught", value: 5000, suffix: "+", counterClass: "counter-caught" },
 ]
 
 export const features = [
@@ -117,5 +119,5 @@ export const footerLinks = [
 
 export const discordLinks = {
   invite: "https://discord.gg/2jEZ94uXEh",
-  bot: "https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID",
+  bot: "https://top.gg/bot/1209518848513024042",
 }

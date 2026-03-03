@@ -187,8 +187,8 @@ export default function CricdexLanding() {
       }
 
       animateCounter(".counter-crics", 500, "+")
-      animateCounter(".counter-players", 128, "")
-      animateCounter(".counter-caught", 2675, "")
+      animateCounter(".counter-players", 200, "+")
+      animateCounter(".counter-caught", 5000, "+")
 
       // Team cards animation
       gsap.fromTo(

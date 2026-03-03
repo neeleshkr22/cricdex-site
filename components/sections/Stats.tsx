@@ -3,6 +3,7 @@
 import { forwardRef } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Trophy, Users, Sparkles } from "lucide-react"
+import { stats as statsData } from "@/data/site-data"
 
 const iconMap = {
   Sparkles,
@@ -13,11 +14,12 @@ const iconMap = {
 const statIcons = ["Sparkles", "Users", "Trophy"] as const
 
 export const Stats = forwardRef<HTMLDivElement>((_, ref) => {
-  const stats = [
-    { label: "Crics to Collect", counterClass: "counter-crics", defaultValue: "500+", icon: "Sparkles" },
-    { label: "Active Players", counterClass: "counter-players", defaultValue: "128", icon: "Users" },
-    { label: "Crics Caught", counterClass: "counter-caught", defaultValue: "2,675", icon: "Trophy" },
-  ]
+  const stats = statsData.map((s, i) => ({
+    label: s.label,
+    counterClass: s.counterClass,
+    defaultValue: `${s.value.toLocaleString()}${s.suffix}`,
+    icon: statIcons[i],
+  }))
 
   return (
     <section ref={ref} className="py-20 px-4 relative overflow-hidden">

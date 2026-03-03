@@ -4,7 +4,7 @@ import { forwardRef } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Crown, Shield, Check } from "lucide-react"
+import { Crown, Gem, Sparkles, Check } from "lucide-react"
 import { pricingPlans } from "@/data/site-data"
 
 export const Pricing = forwardRef<HTMLDivElement>((_, ref) => {
@@ -56,65 +56,65 @@ export const Pricing = forwardRef<HTMLDivElement>((_, ref) => {
             </CardContent>
           </Card>
 
-          {/* Pro Plan */}
+          {/* Legacy Plan */}
           <Card className="pricing-card bg-gradient-to-b from-primary/10 to-card border-primary/50 relative overflow-hidden md:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.2)]">
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg">
               MOST POPULAR
             </div>
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-primary flex items-center gap-2">
-                <Crown className="w-5 h-5" />
-                {pricingPlans.pro.name}
+                <Gem className="w-5 h-5" />
+                {pricingPlans.legacy.name}
               </CardTitle>
               <div className="mt-4">
-                <span className="text-4xl font-bold">{pricingPlans.pro.price}</span>
-                <span className="text-muted-foreground ml-2">{pricingPlans.pro.period}</span>
+                <span className="text-4xl font-bold">{pricingPlans.legacy.price}</span>
+                <span className="text-muted-foreground ml-2">{pricingPlans.legacy.period}</span>
               </div>
-              <CardDescription className="mt-2">{pricingPlans.pro.description}</CardDescription>
+              <CardDescription className="mt-2">{pricingPlans.legacy.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <ul className="space-y-3 text-sm">
-                {pricingPlans.pro.features.map((feature, i) => (
+                {pricingPlans.legacy.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-primary" />
-                    <span className={feature === pricingPlans.pro.highlightedFeature ? "font-semibold text-primary" : ""}>
+                    <span className={feature === pricingPlans.legacy.highlightedFeature ? "font-semibold text-primary" : ""}>
                       {feature}
                     </span>
                   </li>
                 ))}
               </ul>
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-                {pricingPlans.pro.buttonText}
+                {pricingPlans.legacy.buttonText}
               </Button>
             </CardContent>
           </Card>
 
-          {/* Lifetime Plan */}
+          {/* Dynasty Plan */}
           <Card className="pricing-card bg-card/80 border-border/50 relative overflow-hidden hover:border-primary/30 transition-all duration-300 hover-lift">
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-muted-foreground flex items-center gap-2">
-                <Shield className="w-5 h-5" />
-                {pricingPlans.lifetime.name}
+                <Sparkles className="w-5 h-5" />
+                {pricingPlans.dynasty.name}
               </CardTitle>
               <div className="mt-4">
-                <span className="text-4xl font-bold">{pricingPlans.lifetime.price}</span>
-                <span className="text-muted-foreground ml-2">{pricingPlans.lifetime.period}</span>
+                <span className="text-4xl font-bold">{pricingPlans.dynasty.price}</span>
+                <span className="text-muted-foreground ml-2">{pricingPlans.dynasty.period}</span>
               </div>
-              <CardDescription className="mt-2">{pricingPlans.lifetime.description}</CardDescription>
+              <CardDescription className="mt-2">{pricingPlans.dynasty.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <ul className="space-y-3 text-sm">
-                {pricingPlans.lifetime.features.map((feature, i) => (
+                {pricingPlans.dynasty.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-primary" />
-                    <span className={feature === pricingPlans.lifetime.highlightedFeature ? "font-semibold text-primary" : ""}>
+                    <span className={feature === pricingPlans.dynasty.highlightedFeature ? "font-semibold text-primary" : ""}>
                       {feature}
                     </span>
                   </li>
                 ))}
               </ul>
               <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
-                {pricingPlans.lifetime.buttonText}
+                {pricingPlans.dynasty.buttonText}
               </Button>
             </CardContent>
           </Card>
