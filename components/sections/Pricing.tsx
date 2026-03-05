@@ -50,9 +50,11 @@ export const Pricing = forwardRef<HTMLDivElement>((_, ref) => {
                   </li>
                 ))}
               </ul>
-              <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
-                {pricingPlans.basic.buttonText}
-              </Button>
+              <a href="https://discord.gg/EWH93ggYwB" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
+                  {pricingPlans.basic.buttonText}
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -83,9 +85,11 @@ export const Pricing = forwardRef<HTMLDivElement>((_, ref) => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-                {pricingPlans.legacy.buttonText}
-              </Button>
+              <a href="https://discord.gg/EWH93ggYwB" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
+                  {pricingPlans.legacy.buttonText}
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -113,9 +117,11 @@ export const Pricing = forwardRef<HTMLDivElement>((_, ref) => {
                   </li>
                 ))}
               </ul>
-              <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
-                {pricingPlans.dynasty.buttonText}
-              </Button>
+              <a href="https://discord.gg/EWH93ggYwB" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
+                  {pricingPlans.dynasty.buttonText}
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>
