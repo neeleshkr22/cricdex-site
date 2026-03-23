@@ -10,7 +10,7 @@ export const commands = [
 export const teamMembers = [
   { name: "YSR", role: "Developer", discord: "@.ysr07", image: "/team/ysr.gif" },
   { name: "Neelesh", role: "Co-Dev & Designer", discord: "@i.neelesh", image: "/team/neelesh.webp" },
-  { name: "Vaibhav", role: "Founding manager", discord: "@_vaibhavk", image: "/team/vaibhav.webp" },
+  { name: "Vaibhav", role: "Founder", discord: "@_vaibhavk", image: "/team/vaibhav.webp" },
   { name: "Megazord", role: "Card Specialist", discord: "@megazord10", image: "/team/megazord.webp" },
   { name: "Nithin", role: "Card Specialist", discord: "@nithin_24", image: "/team/nithin.webp" },
   { name: "Raj", role: "Card Specialist", discord: "@ans18457", image: "/team/raj.webp" },
@@ -19,54 +19,61 @@ export const teamMembers = [
 ]
 
 export const pricingPlans = {
-  basic: {
-    name: "Basic",
-    price: "$0",
-    period: "/ forever",
-    description: "Try for free",
+  premium: {
+    name: "Premium (Spawnable)",
+    price: "$3.5 / $5.5",
+    period: "one-time",
+    description: "For players who want to dominate the meta",
     features: [
-      "Daily & weekly rewards",
-      "Basic card collection",
-      "Trading & matches",
-      "Leaderboard access",
-    ],
-    buttonText: "Get Started",
-    highlighted: false,
-  },
-  legacy: {
-    name: "Legacy Badge",
-    price: "$6",
-    period: "then $5/mo",
-    description: "For true competitors who want power + rarity",
-    features: [
-      "1.0 Rated Custom Card (Spawnable)",
-      "Monthly Rarity Boost per renewal",
+      "1.0 Rated Custom Card (Spawnable) - $3.5",
+      "0.1 Rated Custom Card (Spawnable) - $5.5",
       "Access to Pre-Launched Cards",
-      "Premium Giveaways",
-      "Legacy Role & Premium Chat",
+      "Higher Chance at Rare Spawns",
+      "Premium Giveaways (Prem GWs)",
+      "Access to Premium Chat",
+      "Exclusive Premium Role",
+      "Showcase Role",
       "Early Access to Upcoming Features",
-      "Rare Spawns",
     ],
-    buttonText: "Get Legacy",
+    buttonText: "Get Premium",
     highlighted: true,
-    highlightedFeature: "Spawnable Custom Card",
   },
-  dynasty: {
-    name: "Dynasty Badge",
+  ambassador: {
+    name: "Ambassador (Non-Spawnable)",
     price: "$5",
-    period: "then $4/mo",
-    description: "For supporters who want identity & exclusivity",
+    period: "first purchase, then $4/mo renewal",
+    description: "For supporters who want identity and exclusivity",
     features: [
-      "1.0 Rated Custom Card (Non-Spawnable)",
-      "Monthly Rarity Boost per renewal",
-      "Dynasty Role",
-      "Access to Private Chat",
-      "Premium Giveaways",
-      "Unique Identity in the Community",
+      "1.0 Rated Custom Card (Non-Spawnable / Exclusive)",
+      "Monthly Rarity Boost (0.9 -> 0.8 -> 0.7...)",
+      "Access to Pre-Launched Cards",
+      "Ambassador Role (Special Highlighted Role)",
+      "Access to Ambassador Chat",
+      "Special Ambassador Giveaways",
+      "0.1 of your choice in every renewal",
+      "Premium spawns",
     ],
-    buttonText: "Get Dynasty",
+    buttonText: "Get Ambassador",
     highlighted: false,
-    highlightedFeature: "Exclusive Custom Card",
+    highlightedFeature: "Ambassador Role (Special Highlighted Role)",
+  },
+  donator: {
+    name: "Donator",
+    price: "$2",
+    period: "/ month",
+    description: "Support the project and unlock supporter perks",
+    features: [
+      "Donator Role",
+      "1 special Grade Packs",
+      "Light Pink Name Highlight",
+      "Access to Donator Chat",
+      "Donator Giveaways",
+      "Supporter Showcase Role",
+      "Priority Community Updates",
+    ],
+    buttonText: "Become a Donator",
+    highlighted: false,
+    highlightedFeature: "Supporter Showcase Role",
   },
 }
 
@@ -112,12 +119,12 @@ export const navLinks = [
 
 export const footerLinks = [
   { label: "Commands", href: "#commands" },
-  { label: "Support", href: "https://discord.gg/2jEZ94uXEh", external: true },
+  { label: "Support", href: "https://discord.gg/xrGqpSkuDE", external: true },
   { label: "Privacy", href: "#" },
   { label: "Terms", href: "#" },
 ]
 
 export const discordLinks = {
-  invite: "https://discord.gg/2jEZ94uXEh",
+  invite: "https://discord.gg/xrGqpSkuDE",
   bot: "https://top.gg/bot/1209518848513024042",
 }
